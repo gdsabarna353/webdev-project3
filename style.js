@@ -14,8 +14,6 @@ function compute()
 
    var final = parseFloat(Amount.value) *(1 + parseFloat(Rate.value) * parseInt(Years.value) /100);
   final = final.toFixed(2);
-   const date = new Date();
-   Years = date.getFullYear();
-   Years = Years+parseInt(Years.value);
+   Years = 2022+parseInt(Years.value);
    document.getElementById("result").innerHTML="If you deposit today Rs."+"<mark>"+Amount.value+"</mark>"+"<br>"+"at an interest rate of "+"<mark>"+Rate.value+"%."+"</mark>"+"<br>"+"You will receive an amount of Rs."+"<mark>"+final+"</mark>"+","+"<br>"+"in the year "+"<mark>"+Years+"</mark>"+"."
 }
